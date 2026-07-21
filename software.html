@@ -8,101 +8,180 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ZengLab home">
-      <span class="brand-mark">ZL</span>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" focusable="false">
+          <defs>
+            <linearGradient id="field-software" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#163b67"/>
+              <stop offset="0.58" stop-color="#2b5f9e"/>
+              <stop offset="1" stop-color="#637892"/>
+            </linearGradient>
+            <linearGradient id="accent-software" x1="16" y1="45" x2="50" y2="18" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#a67d34"/>
+              <stop offset="1" stop-color="#d8b76a"/>
+            </linearGradient>
+          </defs>
+          <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#field-software)"/>
+          <path d="M17 18h29L21 45h27" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M45 18v27" fill="none" stroke="url(#accent-software)" stroke-width="4.2" stroke-linecap="round"/>
+          <path d="M18 36c6.5-7.5 12.5 4.5 19-3s8.5-7 12-2.5" fill="none" stroke="#d8b76a" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="36" r="2.6" fill="#f3d98d"/>
+          <circle cx="31.5" cy="35" r="2.2" fill="#ffffff"/>
+          <circle cx="45" cy="30" r="2.6" fill="#f3d98d"/>
+          <circle cx="48" cy="45" r="2.1" fill="#ffffff"/>
+        </svg>
+      </span>
       <span>
         <strong>ZengLab</strong>
-        <small>Statistical Genetics</small>
+        <small>Genetic Statistics</small>
       </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
+      <a href="team.html">Team</a>
       <a href="publications.html">Publications</a>
       <a class="active" href="software.html">Software</a>
+      <a href="news.html">News</a>
     </nav>
   </header>
 
-  <main>
-    <section class="page-intro">
-      <p class="eyebrow">Software</p>
-      <h1>Open research software</h1>
-      <p class="lead narrow">
-        Selected original or lab-maintained software projects from the biostatpzeng GitHub account.
-        The page highlights methods linked to the lab's statistical genetics and biomedical data science work.
+  <main class="software-page">
+    <section class="software-intro">
+      <h1 class="page-title">Software</h1>
+      <p class="software-note">
+        We develop and maintain open research software for statistical genetics, polygenic prediction, multi-omics integration, pleiotropy analysis, mediation analysis, and transcriptome-wide association studies.
       </p>
-      <div class="inline-links">
-        <a href="https://github.com/biostatpzeng/" target="_blank" rel="noopener">GitHub profile</a>
-      </div>
+      <p class="software-note">
+        Source code is available through the <a href="https://github.com/biostatpzeng/" target="_blank" rel="noopener">biostatpzeng GitHub account</a>.
+      </p>
     </section>
 
-    <section class="section muted">
-      <div class="software-grid">
-        <article class="software-card">
-          <div>
-            <h2>DPR</h2>
-            <p>Latent Dirichlet process regression for non-parametric genetic prediction of complex traits.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/DPR" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>transPGS</h2>
-            <p>Transfer-learning polygenic score methods for genetic prediction in underrepresented populations.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/transPGS" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>TLegene</h2>
-            <p>eGene identification under a transfer-learning framework that borrows genetic similarity across samples.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/TLegene" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>MAIUP</h2>
-            <p>Mixture-adjusted intersection-union testing for pleiotropy under composite null hypotheses.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/MAIUP" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>HMAT</h2>
-            <p>Harmonic mean p-value aggregated TWAS for combining evidence across expression prediction models.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/HMAT" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>MTV</h2>
-            <p>Mixed TWAS and mediated variance estimation for transcriptome-wide association analysis.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/MTV" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>IUSMMT</h2>
-            <p>Intersection-union survival mixture-adjusted mediation testing for high-dimensional omics studies.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/IUSMMT" target="_blank" rel="noopener">Repository</a>
-        </article>
-        <article class="software-card">
-          <div>
-            <h2>iMAP</h2>
-            <p>Integrative mapping of pleiotropic association and annotation selection in genome-wide association studies.</p>
-          </div>
-          <a href="https://github.com/biostatpzeng/iMAP" target="_blank" rel="noopener">Repository</a>
-        </article>
+    <section class="software-section" aria-label="Software list">
+      <div class="software-layout">
+        <aside class="software-sidebar" aria-label="Software index">
+          <nav>
+            <a href="#DPR">DPR</a>
+            <a href="#transPGS">transPGS</a>
+            <a href="#TLegene">TLegene</a>
+            <a href="#MAIUP">MAIUP</a>
+            <a href="#HMAT">HMAT</a>
+            <a href="#MTV">MTV</a>
+            <a href="#IUSMMT">IUSMMT</a>
+            <a href="#iMAP">iMAP</a>
+          </nav>
+          <a class="software-github" href="https://github.com/biostatpzeng/" target="_blank" rel="noopener">Visit lab GitHub</a>
+        </aside>
+
+        <div class="software-list">
+          <a class="software-item" id="DPR" href="https://github.com/biostatpzeng/DPR" target="_blank" rel="noopener" aria-label="Open DPR GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>DPR</h2>
+                <p>Latent Dirichlet process regression</p>
+              </div>
+            </div>
+            <p class="software-description">
+              A non-parametric genetic prediction framework for complex traits, designed to model latent genetic architecture and improve risk prediction from genome-wide markers.
+            </p>
+          </a>
+
+          <a class="software-item" id="transPGS" href="https://github.com/biostatpzeng/transPGS" target="_blank" rel="noopener" aria-label="Open transPGS GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>transPGS</h2>
+                <p>Transfer-learning polygenic score</p>
+              </div>
+            </div>
+            <p class="software-description">
+              Transfer-learning methods for polygenic score construction, with emphasis on improving genetic prediction in underrepresented populations by leveraging cross-population information.
+            </p>
+          </a>
+
+          <a class="software-item" id="TLegene" href="https://github.com/biostatpzeng/TLegene" target="_blank" rel="noopener" aria-label="Open TLegene GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>TLegene</h2>
+                <p>Transfer-learning eGene analysis</p>
+              </div>
+            </div>
+            <p class="software-description">
+              A transfer-learning framework for eGene identification that borrows genetic similarity across samples to strengthen expression quantitative trait analysis.
+            </p>
+          </a>
+
+          <a class="software-item" id="MAIUP" href="https://github.com/biostatpzeng/MAIUP" target="_blank" rel="noopener" aria-label="Open MAIUP GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>MAIUP</h2>
+                <p>Mixture-adjusted pleiotropy testing</p>
+              </div>
+            </div>
+            <p class="software-description">
+              Mixture-adjusted intersection-union testing for detecting pleiotropic associations under composite null hypotheses in genetic and omics studies.
+            </p>
+          </a>
+
+          <a class="software-item" id="HMAT" href="https://github.com/biostatpzeng/HMAT" target="_blank" rel="noopener" aria-label="Open HMAT GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>HMAT</h2>
+                <p>Aggregated transcriptome-wide association</p>
+              </div>
+            </div>
+            <p class="software-description">
+              Harmonic mean p-value aggregation for transcriptome-wide association studies, combining evidence across expression prediction models.
+            </p>
+          </a>
+
+          <a class="software-item" id="MTV" href="https://github.com/biostatpzeng/MTV" target="_blank" rel="noopener" aria-label="Open MTV GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>MTV</h2>
+                <p>TWAS-mediated variance estimation</p>
+              </div>
+            </div>
+            <p class="software-description">
+              A method for transcriptome-wide association analysis and mediated variance estimation, supporting the study of gene expression-mediated disease mechanisms.
+            </p>
+          </a>
+
+          <a class="software-item" id="IUSMMT" href="https://github.com/biostatpzeng/IUSMMT" target="_blank" rel="noopener" aria-label="Open IUSMMT GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>IUSMMT</h2>
+                <p>Survival mediation analysis</p>
+              </div>
+            </div>
+            <p class="software-description">
+              Intersection-union survival mixture-adjusted mediation testing for high-dimensional omics data and time-to-event outcomes.
+            </p>
+          </a>
+
+          <a class="software-item" id="iMAP" href="https://github.com/biostatpzeng/iMAP" target="_blank" rel="noopener" aria-label="Open iMAP GitHub repository">
+            <div class="software-item-header">
+              <div>
+                <h2>iMAP</h2>
+                <p>Integrative pleiotropic mapping</p>
+              </div>
+            </div>
+            <p class="software-description">
+              An integrative mapping approach for pleiotropic association and annotation selection in genome-wide association studies.
+            </p>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>&copy; 2026 ZengLab.</span>
-    <span>Built for GitHub Pages.</span>
+    <span class="footer-links">
+      <span>Built for GitHub Pages.</span>
+      <a class="back-to-top" href="#top">Top</a>
+    </span>
   </footer>
 </body>
 </html>

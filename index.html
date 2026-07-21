@@ -4,131 +4,170 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ZengLab at Xuzhou Medical University develops statistical genetics, multi-omics integration, genetic risk prediction, and causal inference methods for population health.">
-  <title>ZengLab | Statistical Genetics and Population Health</title>
+  <title>ZengLab | Genetic Statistics and Population Health</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ZengLab home">
-      <span class="brand-mark">ZL</span>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" focusable="false">
+          <defs>
+            <linearGradient id="field-index" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#163b67"/>
+              <stop offset="0.58" stop-color="#2b5f9e"/>
+              <stop offset="1" stop-color="#637892"/>
+            </linearGradient>
+            <linearGradient id="accent-index" x1="16" y1="45" x2="50" y2="18" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#a67d34"/>
+              <stop offset="1" stop-color="#d8b76a"/>
+            </linearGradient>
+          </defs>
+          <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#field-index)"/>
+          <path d="M17 18h29L21 45h27" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M45 18v27" fill="none" stroke="url(#accent-index)" stroke-width="4.2" stroke-linecap="round"/>
+          <path d="M18 36c6.5-7.5 12.5 4.5 19-3s8.5-7 12-2.5" fill="none" stroke="#d8b76a" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="36" r="2.6" fill="#f3d98d"/>
+          <circle cx="31.5" cy="35" r="2.2" fill="#ffffff"/>
+          <circle cx="45" cy="30" r="2.6" fill="#f3d98d"/>
+          <circle cx="48" cy="45" r="2.1" fill="#ffffff"/>
+        </svg>
+      </span>
       <span>
         <strong>ZengLab</strong>
-        <small>Statistical Genetics</small>
+        <small>Genetic Statistics</small>
       </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a class="active" href="index.html">Home</a>
-      <a href="research.html">Research</a>
+      <a href="team.html">Team</a>
       <a href="publications.html">Publications</a>
       <a href="software.html">Software</a>
+      <a href="news.html">News</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Xuzhou Medical University</p>
-        <h1>ZengLab</h1>
-        <p class="lead">
-          We develop statistical genetics and population health data science methods for multi-omics integration,
-          genetic risk prediction, causal inference, and large-scale cohort analysis.
+    <section class="home-intro">
+      <div class="home-profile-copy">
+        <h1>Ping Zeng (曾平)</h1>
+        <p class="home-affiliation">
+          Professor of Health Statistics; Doctoral Supervisor<br>
+          Department of Epidemiology and Health Statistics<br>
+          School of Public Health<br>
+          Xuzhou Medical University
         </p>
-        <div class="hero-actions" aria-label="Key links">
-          <a class="button primary" href="publications.html">View Publications</a>
-          <a class="button secondary" href="software.html">Explore Software</a>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <h2>About Us</h2>
+      <p>
+        Welcome to ZengLab. Driven by methodological innovation in statistical genetics,
+        bioinformatics, and population health data science, we integrate population-scale
+        genomics, multi-omics, phenotypic, environmental, and spatially resolved data to
+        decode the molecular and cellular mechanisms of human complex traits and diseases.
+      </p>
+      <p>
+        We are dedicated to bridging statistical discovery and clinical translation, with a
+        focus on disease risk prediction, causal inference, drug target prioritization, and
+        precision public health. Through open software and reproducible analysis, we aim to
+        turn complex biomedical data into robust evidence for prevention, diagnosis,
+        prognosis, and precision therapeutics.
+      </p>
+    </section>
+
+    <section class="home-section research-interests">
+      <h2>Research Interests</h2>
+      <ul class="interest-list">
+        <li>
+          <strong>Statistical genetics and multi-omics integration</strong>
+          <span>Methods for integrating genetic association, eQTL, methylation, transcriptomic, proteomic, metabolomic, and phenotypic data.</span>
+        </li>
+        <li>
+          <strong>Genetic risk prediction and transfer learning</strong>
+          <span>Polygenic risk prediction across populations, with emphasis on underrepresented groups and cross-cohort generalization.</span>
+        </li>
+        <li>
+          <strong>Causal inference and mediation analysis</strong>
+          <span>Mendelian randomization, high-dimensional mediation, pleiotropy-aware testing, and evidence triangulation for biomedical questions.</span>
+        </li>
+        <li>
+          <strong>Large-scale cohort and population health data science</strong>
+          <span>Modeling environmental exposures, early-life factors, social and behavioral traits, biological aging, and multimorbidity.</span>
+        </li>
+        <li>
+          <strong>Complex disease applications</strong>
+          <span>Applications in cardiometabolic, neurodegenerative, neuropsychiatric, immune-related, cancer, and aging-related outcomes.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="home-section lab-news">
+      <div class="section-title-row">
+        <h2>Lab News</h2>
+        <a href="news.html">View more</a>
+      </div>
+      <div class="news-grid">
+        <a class="news-card" href="https://doi.org/10.1016/j.ssmph.2026.101946" target="_blank" rel="noopener" aria-label="Open handgrip strength and cardiovascular disease article">
+          <div class="news-cover">
+            <img src="assets/news-handgrip-cover.jpg" alt="First page of the handgrip strength and cardiovascular disease paper">
+          </div>
+          <div class="news-body">
+            <time datetime="2026-07-10">Jul 10, 2026</time>
+            <h3>Published in <em>SSM - Population Health</em></h3>
+            <p>Cross-cohort insights into handgrip strength transitions, cumulative burdens, and cardiovascular disease risk.</p>
+          </div>
+        </a>
+        <a class="news-card" href="https://doi.org/10.1093/bib/bbag103" target="_blank" rel="noopener" aria-label="Open trans-ethnic genetic similarity article">
+          <div class="news-cover">
+            <img src="assets/news-transethnic-cover.jpg" alt="First page of the trans-ethnic genetic similarity paper">
+          </div>
+          <div class="news-body">
+            <time datetime="2026-03-09">Mar 9, 2026</time>
+            <h3>Published in <em>Briefings in Bioinformatics</em></h3>
+            <p>An integrative association analysis for complex diseases in underrepresented groups by leveraging trans-ethnic genetic similarity.</p>
+          </div>
+        </a>
+        <a class="news-card" href="https://doi.org/10.1186/s12916-025-04177-w" target="_blank" rel="noopener" aria-label="Open biological aging acceleration and cardiovascular disease article">
+          <div class="news-cover">
+            <img src="assets/news-aging-cover.jpg" alt="First page of the biological aging acceleration and cardiovascular disease paper">
+          </div>
+          <div class="news-body">
+            <time datetime="2025-07-11">Jul 11, 2025</time>
+            <h3>Published in <em>BMC Medicine</em></h3>
+            <p>Biological aging acceleration transitions and burdens associated with incident cardiovascular disease in a national cohort.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-section" id="contact">
+      <h2>Contact</h2>
+      <dl class="home-contact">
+        <div>
+          <dt>Email:</dt>
+          <dd><a href="mailto:zpstat@xzhmu.edu.cn">zpstat@xzhmu.edu.cn</a></dd>
         </div>
-      </div>
-      <figure class="profile">
-        <img src="assets/ping-zeng.png" alt="Ping Zeng">
-        <figcaption>
-          <strong>Ping Zeng, PhD</strong>
-          <span>Professor of Health Statistics, Doctoral Supervisor</span>
-        </figcaption>
-      </figure>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Statistical methods for biomedical data at scale</h2>
-      </div>
-      <div class="text-grid">
-        <p>
-          ZengLab is led by Professor Ping Zeng at the School of Public Health, Xuzhou Medical University.
-          The lab works at the intersection of biostatistics, statistical genetics, biomedical big data,
-          and population health.
-        </p>
-        <p>
-          Our research combines modern epidemiologic designs, causal inference, machine learning, and
-          computational statistics to study complex diseases from phenome, genome, epigenome, transcriptome,
-          proteome, and metabolome data.
-        </p>
-      </div>
-    </section>
-
-    <section class="section muted">
-      <div class="section-heading">
-        <p class="eyebrow">Focus Areas</p>
-        <h2>Research at a glance</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature">
-          <h3>Multi-omics integration</h3>
-          <p>Statistical models for connecting genomic, epigenomic, transcriptomic, proteomic, and metabolomic signals.</p>
-        </article>
-        <article class="feature">
-          <h3>Genetic risk prediction</h3>
-          <p>Polygenic prediction, cross-population transfer learning, and risk modeling for complex diseases.</p>
-        </article>
-        <article class="feature">
-          <h3>Causal inference</h3>
-          <p>Mendelian randomization, mediation analysis, and robust evidence triangulation for biomedical questions.</p>
-        </article>
-        <article class="feature">
-          <h3>Cohort data science</h3>
-          <p>Large-scale analysis of UK Biobank and other population datasets for exposure, aging, and disease progression.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section split">
-      <div>
-        <p class="eyebrow">Principal Investigator</p>
-        <h2>Ping Zeng</h2>
-        <p>
-          Professor Zeng received his PhD in Epidemiology and Health Statistics from Nanjing Medical University,
-          followed by postdoctoral training in the Department of Biostatistics at the University of Michigan.
-          His group has published methodological and applied work in journals including Briefings in Bioinformatics,
-          BMC Medicine, International Journal of Epidemiology, PLoS Computational Biology, Nature Communications,
-          and Bioinformatics.
-        </p>
-      </div>
-      <aside class="fact-list" aria-label="Profile links and contact">
-        <a href="mailto:zpstat@xzhmu.edu.cn">zpstat@xzhmu.edu.cn</a>
-        <a href="https://scholar.google.com/citations?user=GankdrwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="http://orcid.org/0000-0003-2710-3440" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://github.com/biostatpzeng/" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://gongwei.xzhmu.edu.cn/info/1168/1723.htm" target="_blank" rel="noopener">Official profile</a>
-      </aside>
-    </section>
-
-    <section class="section contact-band" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>School of Public Health, Xuzhou Medical University</h2>
-      </div>
-      <address>
-        209 Tongshan Road, Yunlong District<br>
-        Xuzhou, Jiangsu 221004, China<br>
-        Email: <a href="mailto:zpstat@xzhmu.edu.cn">zpstat@xzhmu.edu.cn</a>
-      </address>
+        <div>
+          <dt>Office:</dt>
+          <dd>Room 406, KJL A Building</dd>
+        </div>
+        <div>
+          <dt>Address:</dt>
+          <dd>School of Public Health, Xuzhou Medical University, 209 Tongshan Road, Yunlong District, Xuzhou, Jiangsu 221004, China</dd>
+        </div>
+      </dl>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>&copy; 2026 ZengLab.</span>
-    <span>Built for GitHub Pages.</span>
+    <span class="footer-links">
+      <span>Built for GitHub Pages.</span>
+      <a class="back-to-top" href="#top">Top</a>
+    </span>
   </footer>
 </body>
 </html>
