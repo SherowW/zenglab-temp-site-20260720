@@ -3,40 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected representative publications from ZengLab in statistical genetics, epidemiology, and biomedical data science.">
+  <meta name="description" content="Selected, collaborative, and complete publications from ZengLab in statistical genetics, epidemiology, and biomedical data science.">
   <title>ZengLab | Publications</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo-zenglab-favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ZengLab home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" focusable="false">
-          <defs>
-            <linearGradient id="field-publications" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#163b67"/>
-              <stop offset="0.58" stop-color="#2b5f9e"/>
-              <stop offset="1" stop-color="#637892"/>
-            </linearGradient>
-            <linearGradient id="accent-publications" x1="16" y1="45" x2="50" y2="18" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#a67d34"/>
-              <stop offset="1" stop-color="#d8b76a"/>
-            </linearGradient>
-          </defs>
-          <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#field-publications)"/>
-          <path d="M17 18h29L21 45h27" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M45 18v27" fill="none" stroke="url(#accent-publications)" stroke-width="4.2" stroke-linecap="round"/>
-          <path d="M18 36c6.5-7.5 12.5 4.5 19-3s8.5-7 12-2.5" fill="none" stroke="#d8b76a" stroke-width="2.2" stroke-linecap="round"/>
-          <circle cx="18" cy="36" r="2.6" fill="#f3d98d"/>
-          <circle cx="31.5" cy="35" r="2.2" fill="#ffffff"/>
-          <circle cx="45" cy="30" r="2.6" fill="#f3d98d"/>
-          <circle cx="48" cy="45" r="2.1" fill="#ffffff"/>
-        </svg>
-      </span>
-      <span>
+      <span class="brand-mark" aria-hidden="true"><img src="assets/logo-zenglab.png" alt=""></span>
+      <span class="brand-text">
         <strong>ZengLab</strong>
-        <small>Genetic Statistics</small>
+        <small>Biostatistics</small>
       </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
@@ -50,7 +28,7 @@
 
   <main class="publications-page">
     <section class="publications-intro">
-      <h1 class="page-title">Selected Publications</h1>
+      <h1 class="page-title">Publications</h1>
       <p class="publication-note">
         The complete publication record is available on the
         <a href="https://scholar.google.com/citations?user=GankdrwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>
@@ -58,112 +36,334 @@
         <a href="https://github.com/biostatpzeng/pingzeng/blob/master/publications/English%20publications.md" target="_blank" rel="noopener">GitHub publication list</a>.
       </p>
       <p class="publication-note">* authors contributed equally; # co-corresponding authors</p>
+      <div class="publication-tabs" role="tablist" aria-label="Publication categories">
+        <button class="publication-tab active" id="tab-selected-publications" type="button" role="tab" aria-selected="true" aria-controls="selected-publications" data-target="selected-publications">Selected Publications</button>
+        <button class="publication-tab" id="tab-collaborative-publications" type="button" role="tab" aria-selected="false" aria-controls="collaborative-publications" data-target="collaborative-publications">Collaborative Publications</button>
+        <button class="publication-tab" id="tab-all-publications" type="button" role="tab" aria-selected="false" aria-controls="all-publications" data-target="all-publications">All Publications</button>
+      </div>
     </section>
 
-    <section class="publication-section selected-list" aria-label="Selected publication list">
-        <div class="pub-year-block">
-          <h2 class="pub-year">2026</h2>
-          <ol class="publication-list">
+    <section class="publication-section publication-panel" id="selected-publications" role="tabpanel" aria-labelledby="tab-selected-publications" aria-hidden="false">
+      <div class="pub-year-block">
+        <h2 class="pub-year">2026</h2>
+        <ol class="publication-list">
           <li>Shuo Zhang<sup>*</sup>, Jike Qi<sup>*</sup>, Yuchen Jiang<sup>*</sup>, Hua Lin, Xinyi Wang, Ting Wang, Hongyan Cao and <strong>Ping Zeng</strong><sup>#</sup> (2026). An integrative association analysis for complex diseases in underrepresented groups by leveraging the trans-ethnic genetic similarity. <em>Briefings in Bioinformatics</em>, 27(2): bbag103. <a class="pub-link" href="https://academic.oup.com/bib/article/27/2/bbag103/8512410" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2025</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2025</h2>
+        <ol class="publication-list">
           <li>Xin Zhang, Yu Yan, Yuxin Liu, Zixin Wang, Yuchen Jiang, Shuo Zhang, Tongda Xu, Ke Wang, Chu Zheng and <strong>Ping Zeng</strong><sup>#</sup> (2025). Association of biological aging acceleration transitions and burdens with incident cardiovascular disease: longitudinal insights from a national cohort study. <em>BMC Medicine</em>, 23(1): 347. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-025-04177-w" target="_blank" rel="noopener">Article</a>.</li>
           <li>Wenyan Hou<sup>*</sup>, Yuxin Liu<sup>*</sup>, Xingjie Hao<sup>*</sup>, Jike Qi, Yuchen Jiang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Relatively independent and complementary roles of family history and polygenic risk score in age at onset and incident cases of 12 common diseases. <em>Social Science and Medicine</em>, 371: 117942. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0277953625002710#:~:text=We%20here%20investigated%20the%20impacts%20of%20FH%20and,well%20as%20their%20clinical%20value%20in%20risk%20prediction." target="_blank" rel="noopener">Article</a>.</li>
           <li>Yiyang Zhu<sup>*</sup>, Wenying Chen<sup>*</sup>, Kexuan Zhu<sup>*</sup>, Yuxin Liu<sup>*</sup>, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Polygenic prediction for underrepresented populations through transfer learning by utilizing genetic similarity shared with European populations. <em>Briefings in Bioinformatics</em>, 26(1): bbaf048. <a class="pub-link" href="https://academic.oup.com/bib/article/26/1/bbaf048/7999071" target="_blank" rel="noopener">Article</a>.</li>
-          <li>Hao Zhang, Keying Chen, Tongyu Gao, Yu Yan, Ying Liu, Yuxin Liu, Kexuan Zhu, Jike Qi, Chu Zheng, Ting Wang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2025). Establishing a robust triangulation framework to explore the relationship between hearing loss and Parkinson&#x27;s disease. <em>npj Parkinson&#x27;s Disease</em>, 11(1): 5. <a class="pub-link" href="https://www.nature.com/articles/s41531-024-00861-5?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=oa_20250103&amp;utm_content=10.1038/s41531-024-00861-5#citeas" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Hao Zhang, Keying Chen, Tongyu Gao, Yu Yan, Ying Liu, Yuxin Liu, Kexuan Zhu, Jike Qi, Chu Zheng, Ting Wang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2025). Establishing a robust triangulation framework to explore the relationship between hearing loss and Parkinson's disease. <em>npj Parkinson&#x27;s Disease</em>, 11(1): 5. <a class="pub-link" href="https://www.nature.com/articles/s41531-024-00861-5?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=oa_20250103&amp;utm_content=10.1038/s41531-024-00861-5#citeas" target="_blank" rel="noopener">Article</a>.</li>
           <li>Shuo Zhang, Yuxin Liu, Jike Qi, Yu Yan, Tongyu Gao, Xin Zhang, Dong Sun, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Accelerated aging as a mediator of the association between co-exposure to multiple air pollutants and risk of chronic kidney disease. <em>Ecotoxicology and Environmental Safety</em>, 290: 117582. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0147651324016580" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2024</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2024</h2>
+        <ol class="publication-list">
           <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Tongyu Gao, Keying Chen, Yuxin Liu, Ying Liu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). More attention should be paid on time-varying environmental exposures in the UK Biobank. <em>European Journal of Preventive Cardiology</em>, 31(11): e85. <a class="pub-link" href="https://academic.oup.com/eurjpc/article-abstract/31/11/e85/7670371?utm_source=etoc&amp;utm_campaign=eurjpc&amp;utm_medium=email#" target="_blank" rel="noopener">Article</a>.</li>
           <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Tongyu Gao, Keying Chen, Yuxin Liu, Ying Liu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). Co-exposure to multiple air pollutants, genetic susceptibility, and risk of acute myocardial infarction onset: A cohort analysis of the UK Biobank participants. <em>European Journal of Preventive Cardiology</em>, 31(6): 698-706. <a class="pub-link" href="https://academic.oup.com/eurjpc/article-abstract/31/6/698/7470718?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
           <li>Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2024). Incorporating genetic similarity of auxiliary samples into eGene identification under the transfer learning framework. <em>Journal of Translational Medicine</em>, 22(1): 258. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-024-05053-6" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2023</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2023</h2>
+        <ol class="publication-list">
           <li>Siyi Jin<sup>*</sup>, Ting Wang<sup>*</sup>, Wenying Chen, Yuxuan Wu, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2023). Maternal and fetal origins of offspring blood pressure: statistical analysis using genetic correlation and genetic risk score based Mendelian randomization. <em>International Journal of Epidemiology</em>, 52(5): 1360-1376. <a class="pub-link" href="https://academic.oup.com/ije/advance-article-abstract/doi/10.1093/ije/dyad034/7082923?redirectedFrom=fulltext&amp;login=false" target="_blank" rel="noopener">Article</a>.</li>
           <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Keying Chen, Yuxuan Wu, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Long-term influence of air pollutants on morbidity and all-cause mortality of cardiometabolic multi-morbidity: A cohort analysis of the UK Biobank participants. <em>Environmental Research</em>, 237(Part 1): 116873. <a class="pub-link" href="https://linkinghub.elsevier.com/retrieve/pii/S0013935123016778" target="_blank" rel="noopener">Article</a>.</li>
           <li>Haojie Lu<sup>*</sup>, Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2023). Leveraging trans-ethnic genetic risk scores to improve association power for complex traits in underrepresented populations. <em>Briefings in Bioinformatics</em>, 24(4): bbad232. <a class="pub-link" href="https://academic.oup.com/bib/article-abstract/24/4/bbad232/7199900?redirectedFrom=fulltext&amp;login=false" target="_blank" rel="noopener">Article</a>.</li>
           <li>Jinhui Zhang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Ting Wang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2023). Similarity and diversity of genetic architecture for complex traits between East Asian and European populations.  <em>BMC Genomics</em>, 24(1): 314. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-023-09434-x" target="_blank" rel="noopener">Article</a>.</li>
           <li>Jiahao Qiao<sup>*</sup>, Yuxuan Wu<sup>*</sup>, Shuo Zhang<sup>*</sup>, Yue Xu, Jinhui Zhang, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Evaluating significance of European-associated index SNPs in the East Asian population for 31 complex phenotypes. <em>BMC Genomics</em>, 24(1): 324. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-023-09425-y" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2022</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2022</h2>
+        <ol class="publication-list">
           <li>Jiahao Qiao<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Yuxuan Wu, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>*</sup> (2022). Detecting associated genes for complex traits shared across East Asian and European populations  under the framework of composite null hypothesis testing. <em>Journal of Translational Medicine</em>, 20(1): 424. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-022-03637-8" target="_blank" rel="noopener">Article</a>.</li>
           <li>Zhonghe Shao<sup>*</sup>, Ting Wang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Yuchen Zhang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2022). A comprehensive comparison of multilocus association methods with summary statistics in genome-wide association studies. <em>BMC Bioinformatics</em>, 23(1): 359. <a class="pub-link" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-022-04897-3" target="_blank" rel="noopener">Article</a>.</li>
           <li>Ting Wang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Shuo Zhang<sup>*</sup>, Yongyue Wei<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2022). Simultaneous test and estimation of total genetic effect in eQTL integrative analysis through mixed models. <em>Briefings in Bioinformatics</em>, 23(2): bbac038. <a class="pub-link" href="https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac038/6535679?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
           <li>Ting Wang, Haojie Lu and <strong>Ping Zeng</strong><sup>#</sup> (2022). Identifying pleiotropic genes for complex phenotypes with summary statistics from a perspective of composite null hypothesis testing. <em>Briefings in Bioinformatics</em>, 23(1): bbab389. <a class="pub-link" href="https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbab389/6375058?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2021</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2021</h2>
+        <ol class="publication-list">
           <li>Haojie Lu<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Ting Wang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). A comprehensive gene-centric pleiotropic association analysis for 14 psychiatric disorders with GWAS summary statistics. <em>BMC Medicine</em>, 19: 314. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-021-02186-z#citeas" target="_blank" rel="noopener">Article</a>.</li>
           <li>Haojie Lu<sup>*</sup>, Yongyue Wei<sup>*</sup>, Zhou Jiang, Jinhui Zhang, Ting Wang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Integrative eQTL-weighted hierarchical Cox models for SNP-set based time-to-event association studies. <em>Journal of Translational Medicine</em>, 19(1): 418. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-021-03090-z" target="_blank" rel="noopener">Article</a>.</li>
           <li>Zhonghe Shao<sup>*</sup>, Ting Wang<sup>*</sup>, Meng Zhang, Zhou Jiang, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). IUSMMT: survival mediation analysis of gene expression with multiple DNA methylation exposures and its application to cancers of TCGA. <em>PLoS Computational Biology</em>, 17(8): e1009250. <a class="pub-link" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009250" target="_blank" rel="noopener">Article</a>.</li>
           <li>Haimiao Chen<sup>*</sup>, Jinhui Zhang<sup>*</sup>, Ting Wang<sup>*</sup>, Shuo Zhang, Qingwei Lai, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Type II diabetes mellitus and amyotrophic lateral sclerosis: genetic overlap, causality, and mediation. <em>Journal of Clinical Endocrinology &amp; Metabolism</em>, 106(11): e4497-e4508. <a class="pub-link" href="https://academic.oup.com/jcem/advance-article-abstract/doi/10.1210/clinem/dgab465/6309609?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
           <li>Haojie Lu<sup>*</sup>, Ting Wang<sup>*</sup>, Jinhui Zhang, Shuo Zhang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Evaluating marginal genetic correlation of associated loci for complex diseases and traits between European and East Asian populations. <em>Human Genetics</em>, 140(9): 1285-1297. <a class="pub-link" href="https://link.springer.com/article/10.1007%2Fs00439-021-02299-8" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong><sup>#</sup>, Zhonghe Shao and Xiang Zhou<sup>#</sup> (2021). Statistical methods for mediation analysis in the era of high-throughput genomics: current successes and future challenges. <em>Computational and Structural Biotechnology Journal</em>, 19: 3209-3224. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2001037021002233?via%3Dihub" target="_blank" rel="noopener">Article</a>.</li>
-          <li>Xinghao Yu, Yongyue Wei, <strong>Ping Zeng</strong><sup>#</sup> and Shufeng Lei<sup>#</sup> (2021). Birth weight is positively associated with adult osteoporosis risk: observational and Mendelian randomization studies. <em>Journal of Bone and Mineral Research</em>, 36(8): 1469-1480. <a class="pub-link" href="https://asbmr.onlinelibrary.wiley.com/doi/10.1002/jbmr.4316" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong><sup>#</sup>, Jing Dai, Siyi Jin and Xiang Zhou<sup>#</sup> (2021). Aggregating multiple expression prediction models improves the power of transcriptome wide association studies. <em>Human Molecular Genetics</em>, 30(10): 939-951. <a class="pub-link" href="https://academic.oup.com/hmg/article-abstract/30/10/939/6145951?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
-          <li>Lu Liu, <strong>Ping Zeng</strong>, Fuzhong Xue, Zhongshang Yuan<sup>#</sup> and Xiang Zhou<sup>#</sup> (2021). Multi-trait transcriptome-wide association studies with probabilistic Mendelian randomization. <em>The American Journal of Human Genetics</em>, 108(2): 240-256. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0002929720304420" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2020</h2>
-          <ol class="publication-list">
-          <li>Zhongshang Yuan, Huanhuan Zhu, <strong>Ping Zeng</strong>, Sheng Yang, Shiquan Sun, Can Yang, Jin Liu and Xiang Zhou<sup>#</sup> (2020). Testing and controlling for horizontal pleiotropy with the probabilistic Mendelian randomization in transcriptome-wide association studies. <em>Nature Communications</em>, 11(1): 3861. <a class="pub-link" href="https://www.nature.com/articles/s41467-020-17668-6" target="_blank" rel="noopener">Article</a></li>
-          <li>Xinghao Yu<sup>*</sup>, Zhongshang Yuan<sup>*</sup>, Haojie Lu, Yixin Gao, Haimiao Chen, Zhonghe Shao, Jiaji Yang, Fengjun Guan, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2020). Relationship between birth weight and chronic kidney disease: evidence from systematics review and two-sample Mendelian randomization analysis. <em>Human Molecular Genetics</em>, 29(13): 2261-2274. <a class="pub-link" href="https://academic.oup.com/hmg/article-abstract/29/13/2261/5824309?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a></li>
-          <li>Xinghao Yu<sup>*</sup>, Ting Wang<sup>*</sup>, Yiming Chen, Ziyuan Shen, Yixin Gao, Lishun Xiao, Junnian Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Alcohol Drinking and Amyotrophic Lateral Sclerosis: An Instrumental Variable Causal Inference. <em>Annals of Neurology</em>, 88(1): 195-198. <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/full/10.1002/ana.25721" target="_blank" rel="noopener">Article</a></li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2019</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2020</h2>
+        <ol class="publication-list">
+          <li>Xinghao Yu<sup>*</sup>, Zhongshang Yuan<sup>*</sup>, Haojie Lu, Yixin Gao, Haimiao Chen, Zhonghe Shao, Jiaji Yang, Fengjun Guan, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2020). Relationship between birth weight and chronic kidney disease: evidence from systematics review and two-sample Mendelian randomization analysis. <em>Human Molecular Genetics</em>, 29(13): 2261-2274. <a class="pub-link" href="https://academic.oup.com/hmg/article-abstract/29/13/2261/5824309?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu<sup>*</sup>, Ting Wang<sup>*</sup>, Yiming Chen, Ziyuan Shen, Yixin Gao, Lishun Xiao, Junnian Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Alcohol Drinking and Amyotrophic Lateral Sclerosis: An Instrumental Variable Causal Inference. <em>Annals of Neurology</em>, 88(1): 195-198. <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/full/10.1002/ana.25721" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2019</h2>
+        <ol class="publication-list">
           <li><strong>Ping Zeng</strong><sup>#</sup>, Ting Wang, Junnian Zheng<sup>#</sup> and Xiang Zhou<sup>#</sup> (2019). Causal association of type 2 diabetes with amyotrophic lateral sclerosis: new evidence from Mendelian randomization using GWAS summary statistics. <em>BMC Medicine</em>, 17(1), 225. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1448-9" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong><sup>#</sup> and Xiang Zhou<sup>#</sup> (2019). Causal effects of blood lipids on amyotrophic lateral sclerosis: a Mendelian randomization study. <em>Human Molecular Genetics</em>, 28(4): 688-697. <a class="pub-link" href="https://www.ncbi.nlm.nih.gov/pubmed/30445611" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2018</h2>
-          <ol class="publication-list">
-          <li><strong>Ping Zeng</strong>, Xingjie Hao and Xiang Zhou<sup>#</sup> (2018). Pleiotropic Mapping and Annotation Selection in Genome-wide Association Studies with Penalized Gaussian Mixture Models. <em>Bioinformatics</em>, 34(16): 2797-2807. <a class="pub-link" href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty204/4960046?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>..</li>
-          <li>Xingjie Hao, <strong>Ping Zeng</strong>, Shujun Zhang and Xiang Zhou<sup>#</sup> (2018). Identifying and exploiting trait-relevant tissues with multiple functional annotations in genome-wide association studies. <em>PLoS Genetics</em>, 14(1): e1007186. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007186" target="_blank" rel="noopener">Article</a>..</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2017</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2018</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong>, Xingjie Hao and Xiang Zhou<sup>#</sup> (2018). Pleiotropic Mapping and Annotation Selection in Genome-wide Association Studies with Penalized Gaussian Mixture Models. <em>Bioinformatics</em>, 34(16): 2797-2807. <a class="pub-link" href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty204/4960046?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2017</h2>
+        <ol class="publication-list">
           <li><strong>Ping Zeng</strong> and Xiang Zhou<sup>#</sup> (2017). Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models. <em>Nature Communications</em>, 8(1): 456. <a class="pub-link" href="https://www.nature.com/articles/s41467-017-00470-2?WT.feed_name=subjects_genetics" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong><sup>#</sup>, Xiang Zhou and Shuiping Huang<sup>#</sup> (2017). Prediction of gene expression with cis-SNPs using mixed models and regularization methods. <em>BMC Genomics</em>, 18(1): 368. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-3759-6" target="_blank" rel="noopener">Article</a>.</li>
-          <li>Lorin Crawford<sup>#</sup>, <strong>Ping Zeng</strong>, Sayan Mukherjee and Xiang Zhou<sup>#</sup> (2017). Detecting epistasis with the marginal epistasis test in genetic mapping studies of quantitative traits. <em>PLoS Genetics</em>, 13(7): e1006869. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006869" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2015</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2015</h2>
+        <ol class="publication-list">
           <li><strong>Ping Zeng</strong>, Yang Zhao, Chen Qian, Liwei Zhang, Ruyang Zhang, Jianwei Gou, Jin Liu, Liya Liu and Feng Chen<sup>#</sup> (2015). Statistical analysis for Genome-Wide Association Study. <em>Journal of Biomedical Research</em>, 29(4): 285-297. <a class="pub-link" href="http://www.jbr-pub.org/ch/reader/view_abstract.aspx?file_no=JBR150403&amp;flag=1" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong><sup>#</sup> and Ting Wang (2015). Bootstrap restricted likelihood ratio test for the detection of rare variants. <em>Current Genomics</em>, 16(3): 194-202. <a class="pub-link" href="http://www.eurekaselect.com/129127" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong>, Yang Zhao, Hongliang Li, Ting Wang and Feng Chen<sup>#</sup> (2015). Permutation-based variance component test in generalized linear mixed model with application to multilocus genetic association study. <em>BMC Medical Research Methodology</em>, 15(37). <a class="pub-link" href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-015-0030-1" target="_blank" rel="noopener">Article</a>.</li>
-          <li><strong>曾平</strong>, 赵杨, 陈峰<sup>#</sup>. 新一代测序数据的罕见遗传变异关联性统计方法. <em>中国卫生统计</em>, 2015, 32(6): 1091-1096.</li>
-          </ol>
-        </div>
-        <div class="pub-year-block">
-          <h2 class="pub-year">2014</h2>
-          <ol class="publication-list">
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2014</h2>
+        <ol class="publication-list">
           <li><strong>Ping Zeng</strong>, Yang Zhao, Jin Liu, Liya Liu, Liwei Zhang, Ting Wang, Shuiping Huang and Feng Chen<sup>#</sup> (2014). Likelihood ratio tests in rare variant detection for continuous phenotypes. <em>Annals of Human Genetics</em>, 78(5): 320-332. <a class="pub-link" href="http://onlinelibrary.wiley.com/doi/10.1111/ahg.12071/full" target="_blank" rel="noopener">Article</a>.</li>
           <li><strong>Ping Zeng</strong>, Yongyue Wei, Yang Zhao, Jin Liu, Liya Liu, Ruyang Zhang, Jianwei Gou, Shuiping Huang and Feng Chen<sup>#</sup> (2014). Variable selection approach for zero-inflated count data via adaptive lasso. <em>Journal of Applied Statistics</em>, 41(4): 879-894. <a class="pub-link" href="http://www.tandfonline.com/doi/abs/10.1080/02664763.2013.858672" target="_blank" rel="noopener">Article</a>.</li>
-          </ol>
-        </div>
+        </ol>
+      </div>
+    </section>
+
+    <section class="publication-section publication-panel" id="collaborative-publications" role="tabpanel" aria-labelledby="tab-collaborative-publications" aria-hidden="true" hidden>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2026</h2>
+        <ol class="publication-list">
+          <li>Yaqian Xu<sup>*</sup>, Jinming Fu<sup>*</sup>, Chongyu Ding, Hui Zhang, Yulu Gong, Darong Hao, Xiao Sun, <strong>Ping Zeng</strong><sup>#</sup> and Xiangwei Li<sup>#</sup> (2026). Reproductive life events and biological aging in women over 50: evidence from DNA methylation clocks. <em>npj Aging</em>. <a class="pub-link" href="https://www.nature.com/articles/s41514-026-00394-6" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2024</h2>
+        <ol class="publication-list">
+          <li>Shuo Zhang<sup>*</sup>, Hongyan Cao<sup>*</sup>, Keying Chen, Tongyu Gao, Huashuo Zhao, Chu Zheng, Ting Wang, <strong>Ping Zeng</strong><sup>#</sup> and Ke Wang<sup>#</sup> (2024). Joint exposure to various ambient air pollutants, genetic susceptibility and incident dementia: a prospective analysis in the UK Biobank cohort. <em>International Journal of Public Health</em>, 69: 1606868. <a class="pub-link" href="https://www.ssph-journal.org/articles/10.3389/ijph.2024.1606868/full?&amp;utm_source=Email_to_authors_&amp;utm_medium=Email&amp;utm_content=T1_11.5e1_author&amp;utm_campaign=Email_publication&amp;field=&amp;journalName=International_Journal_of_Public_Health&amp;id=1606868" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Meng Zhang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, <strong>Ping Zeng</strong><sup>#</sup> and Zhuangzhuang Liu<sup>#</sup> (2024). Investigating the relationship between birthweight and breast cancer from a non-linear and mediation perspective. <em>Iranian Journal of Public Health</em>, 53(1): 187-197. <a class="pub-link" href="https://publish.kne-publishing.com/index.php/ijph/article/view/14695" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2023</h2>
+        <ol class="publication-list">
+          <li>Peilin Yu, Zhou Jiang, Chu Zheng, <strong>Ping Zeng</strong>, Lihong Huang<sup>#</sup>, Yingliang Jin<sup>#</sup> and Ke Wang<sup>#</sup> (2023). Variety ACEs and risk of developing anxiety, depression, or anxiety-depression co-morbidity: the 2006-2022 UK Biobank data. <em>Frontiers in Psychiatry</em>, 14: 1233981. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1233981/full" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2022</h2>
+        <ol class="publication-list">
+          <li>Haibo Xu<sup>#</sup>, Xing Liu and <strong>Ping Zeng</strong> (2022). The Mediating Role of Social Support in the Relationship between Psychological Capital and Depression among Chinese Emergency Physicians. <em>Psychology Research and Behavior Management</em>, 15: 977-990. <a class="pub-link" href="https://www.dovepress.com/the-mediating-role-of-social-support-in-the-relationship-between-psych-peer-reviewed-fulltext-article-PRBM" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2021</h2>
+        <ol class="publication-list">
+          <li>Derui Yan, Mingjing Shen, Zixuan Du, Jianping Cao, Ye Tian, <strong>Ping Zeng</strong><sup>#</sup> and Zaixiang Tang<sup>#</sup> (2021). Developing ZNF Gene Signatures Predicting Radiosensitivity of Patients with Breast Cancer. <em>Journal of Oncology</em>, 9255494. <a class="pub-link" href="https://www.hindawi.com/journals/jo/2021/9255494/" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu, Yongyue Wei, <strong>Ping Zeng</strong><sup>#</sup> and Shufeng Lei<sup>#</sup> (2021). Birth weight is positively associated with adult osteoporosis risk: observational and Mendelian randomization studies. <em>Journal of Bone and Mineral Research</em>, 36(8): 1469-1480. <a class="pub-link" href="https://asbmr.onlinelibrary.wiley.com/doi/10.1002/jbmr.4316" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yanjun Wang, Ping Guo, Lu Liu, Yanan Zhang, <strong>Ping Zeng</strong><sup>#</sup> and Zhongshang Yuan<sup>#</sup> (2021). Mendelian randomization highlights the causal role of normal thyroid function on blood lipid profiles. <em>Endocrinology</em>, 162(5): bqab037. <a class="pub-link" href="https://doi.org/10.1210/endocr/bqab037" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lu Liu, <strong>Ping Zeng</strong>, Fuzhong Xue, Zhongshang Yuan<sup>#</sup> and Xiang Zhou<sup>#</sup> (2021). Multi-trait transcriptome-wide association studies with probabilistic Mendelian randomization. <em>The American Journal of Human Genetics</em>, 108(2): 240-256. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0002929720304420" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2020</h2>
+        <ol class="publication-list">
+          <li>Zhongshang Yuan, Huanhuan Zhu, <strong>Ping Zeng</strong>, Sheng Yang, Shiquan Sun, Can Yang, Jin Liu and Xiang Zhou<sup>#</sup> (2020). Testing and controlling for horizontal pleiotropy with the probabilistic Mendelian randomization in transcriptome-wide association studies. <em>Nature Communications</em>, 11(1): 3861. <a class="pub-link" href="https://www.nature.com/articles/s41467-020-17668-6" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lu Liu<sup>*</sup>, <strong>Ping Zeng</strong><sup>*</sup>, Sheng Yang<sup>#</sup> and Zhongshang Yuan<sup>#</sup> (2020). Leveraging methylation to identify the potential causal genes on survival in lung adenocarcinoma and lung squamous cell carcinoma. <em>Oncology Letters</em>, 20(1): 193-200. <a class="pub-link" href="https://www.spandidos-publications.com/10.3892/ol.2020.11564/abstract" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2019</h2>
+        <ol class="publication-list">
+          <li>Xinghao Yu, Lishun Xiao, <strong>Ping Zeng</strong><sup>#</sup> and Shuiping Huang<sup>#</sup> (2019). Jackknife Model Averaging Prediction Methods for Complex Phenotypes with Gene Expression Levels by Integrating External Pathway Information. <em>Computational and Mathematical Methods in Medicine</em>, 2019: 8. <a class="pub-link" href="https://www.hindawi.com/journals/cmmm/2019/2807470/cta/" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2018</h2>
+        <ol class="publication-list">
+          <li>Xingjie Hao, <strong>Ping Zeng</strong>, Shujun Zhang and Xiang Zhou<sup>#</sup> (2018). Identifying and exploiting trait-relevant tissues with multiple functional annotations in genome-wide association studies. <em>PLoS Genetics</em>, 14(1): e1007186. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007186" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2017</h2>
+        <ol class="publication-list">
+          <li>Lorin Crawford<sup>#</sup>, <strong>Ping Zeng</strong>, Sayan Mukherjee and Xiang Zhou<sup>#</sup> (2017). Detecting epistasis with the marginal epistasis test in genetic mapping studies of quantitative traits. <em>PLoS Genetics</em>, 13(7): e1006869. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006869" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="publication-section publication-panel" id="all-publications" role="tabpanel" aria-labelledby="tab-all-publications" aria-hidden="true" hidden>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2026</h2>
+        <ol class="publication-list">
+          <li>Hua Lin<sup>*</sup>, Jike Qi<sup>*</sup>, Yuchen Jiang<sup>*</sup>, Yu Yan, Hao Zhang, Xin Zhang, Jingjing Sun, Min Sun, Wensu Chen, Chen Wang, Tongda Xu, Tianyue Xu,  Xingjie Hao, Chu Zheng, Ke Wang and <strong>Ping Zeng</strong><sup>#</sup> (2026). Cross-cohort insights into the association of handgrip strength transitions and burdens with cardiovascular disease risk. <em>SSM - Population Health</em>, 35: 101946. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2352827326000480" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yaqian Xu<sup>*</sup>, Jinming Fu<sup>*</sup>, Chongyu Ding, Hui Zhang, Yulu Gong, Darong Hao, Xiao Sun, <strong>Ping Zeng</strong><sup>#</sup> and Xiangwei Li<sup>#</sup> (2026). Reproductive life events and biological aging in women over 50: evidence from DNA methylation clocks. <em>npj Aging</em>. <a class="pub-link" href="https://www.nature.com/articles/s41514-026-00394-6" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Guojing Yuan<sup>*</sup>, Ying Liu<sup>*</sup>, Jike Qi, Hua Lin, Yuchen Jiang, Xinyi Wang, Yu Yan, Ting Wang, Shuo Zhang and <strong>Ping Zeng</strong><sup>#</sup> (2026). Biological Age Acceleration and the Dynamic Progression of Cardiovascular-Kidney-Metabolic Diseases to Multimorbidity, Dementia and Mortality: A Prospective Cohort Study. <em>Geriatrics &amp; gerontology international</em>, 26(5): e70557. <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/10.1111/ggi.70557" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang<sup>*</sup>, Jike Qi<sup>*</sup>, Yuchen Jiang<sup>*</sup>, Hua Lin, Xinyi Wang, Ting Wang, Hongyan Cao and <strong>Ping Zeng</strong><sup>#</sup> (2026). An integrative association analysis for complex diseases in underrepresented groups by leveraging the trans-ethnic genetic similarity. <em>Briefings in Bioinformatics</em>, 27(2): bbag103. <a class="pub-link" href="https://academic.oup.com/bib/article/27/2/bbag103/8512410" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Hao Zhang, Yuxin Liu, Yu Yan, Jike Qi, Hua Lin, Yuchen Jiang, Xinyi Wang, Hongyan Cao, Zhou Jiang, Shuo Zhang, Ting Wang, Yue Xu, Weiyi Song, Ke Wang<sup>#</sup>, Chu Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2026). Unravelling the role of inflammatory markers in coronary artery disease risk via association, mediation and prediction analyses. <em>Journal of Global Health</em>, 16: 04060. <a class="pub-link" href="https://jogh.org/2026/jogh-16-04060" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2025</h2>
+        <ol class="publication-list">
+          <li>Xin Zhang, Yu Yan, Yuxin Liu, Zixin Wang, Yuchen Jiang, Shuo Zhang, Tongda Xu, Ke Wang, Chu Zheng and <strong>Ping Zeng</strong><sup>#</sup> (2025). Association of biological aging acceleration transitions and burdens with incident cardiovascular disease: longitudinal insights from a national cohort study. <em>BMC Medicine</em>, 23(1): 347. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-025-04177-w" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yuxin Liu, Yu Yan, Yuchen Jiang, Xinyi Wang, Hua Lin, Keying Chen, Shuo Zhang, Fengjun Guan, Pan Zhang, Ting Wang, Ke Wang, Chu Zheng, Yue Xu<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2025). A comprehensive exploration of the impact and contribution of polygenic risk score on age at onset of 30 complex diseases. <em>Public Health</em>, 244: 105754. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0033350625002008?via%3Dihub" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang, Yu Yan, Jike Qi, Yuxin Liu, Yuchen Jiang, Hao Zhang, Hao Chen, Xinying Guan, Pan Zhang, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Roles of genetic predisposition and mediation of biological age acceleration in the association between air pollution and dementia. <em>Journals of Gerontology Series A: Biomedical Sciences and Medical Sciences</em>, 80(6): glaf046. <a class="pub-link" href="https://academic.oup.com/biomedgerontology/article-abstract/80/6/glaf046/8051326?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Associations of Maternal Smoking During Pregnancy and Genetic Susceptibility with Incident Asthma from a Cohort Study. <em>Prevention Science</em>, 26(3): 343-354. <a class="pub-link" href="https://link.springer.com/article/10.1007/s11121-025-01793-z" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Wenying Chen<sup>*</sup>, Yuxin Liu<sup>*</sup>, Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup>, Ting Wang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Transfer Learning Prediction of Early Exposures and Genetic Risk Score on Adult Obesity in Two Minority Cohorts. <em>Prevention Science</em>, 26(2): 234-245. <a class="pub-link" href="https://link.springer.com/article/10.1007/s11121-025-01781-3" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Wenyan Hou<sup>*</sup>, Yuxin Liu<sup>*</sup>, Xingjie Hao<sup>*</sup>, Jike Qi, Yuchen Jiang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Relatively independent and complementary roles of family history and polygenic risk score in age at onset and incident cases of 12 common diseases. <em>Social Science and Medicine</em>, 371: 117942. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0277953625002710#:~:text=We%20here%20investigated%20the%20impacts%20of%20FH%20and,well%20as%20their%20clinical%20value%20in%20risk%20prediction." target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yuxin Liu<sup>*</sup>, Wenyan Hou<sup>*</sup>, Tongyu Gao, Yu Yan, Ting Wang, Chu Zheng and <strong>Ping Zeng</strong><sup>#</sup> (2025). Influence and role of polygenic risk score in the development of 32 complex diseases. <em>Journal of Global Health</em>, 15: 04071. <a class="pub-link" href="https://jogh.org/2025/jogh-15-04071" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yiyang Zhu<sup>*</sup>, Wenying Chen<sup>*</sup>, Kexuan Zhu<sup>*</sup>, Yuxin Liu<sup>*</sup>, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Polygenic prediction for underrepresented populations through transfer learning by utilizing genetic similarity shared with European populations. <em>Briefings in Bioinformatics</em>, 26(1): bbaf048. <a class="pub-link" href="https://academic.oup.com/bib/article/26/1/bbaf048/7999071" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Hao Zhang, Keying Chen, Tongyu Gao, Yu Yan, Ying Liu, Yuxin Liu, Kexuan Zhu, Jike Qi, Chu Zheng, Ting Wang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2025). Establishing a robust triangulation framework to explore the relationship between hearing loss and Parkinson's disease. <em>npj Parkinson&#x27;s Disease</em>, 11(1): 5. <a class="pub-link" href="https://www.nature.com/articles/s41531-024-00861-5?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=oa_20250103&amp;utm_content=10.1038/s41531-024-00861-5#citeas" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Tongyu Gao<sup>*</sup>, Hao Zhang<sup>*</sup>, Yu Yan, Yuxin Liu, Zhou Jiang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Broad evidence triangulation should be established for a valid and robust causal relation between air pollution and health outcome. <em>CNS Neuroscience &amp; Therapeutics</em>, 31(1): e70207. <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/10.1111/cns.70207" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang, Yuxin Liu, Jike Qi, Yu Yan, Tongyu Gao, Xin Zhang, Dong Sun, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2025). Accelerated aging as a mediator of the association between co-exposure to multiple air pollutants and risk of chronic kidney disease. <em>Ecotoxicology and Environmental Safety</em>, 290: 117582. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0147651324016580" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yuxuan Wu<sup>*</sup>, Yu Yan<sup>*</sup>, Jike Qi, Yuxin Liu, Ting Wang, Chu Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2025). Mendelian randomization and genetic pleiotropy analysis for the connection between inflammatory bowel disease and Alzheimer's disease. <em>Progress in Neuro-Psychopharmacology and Biological Psychiatry</em>, 136: 111203. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0278584624002719?dgcid=author" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2024</h2>
+        <ol class="publication-list">
+          <li>Wenyan Hou<sup>*</sup>, Fengjun Guan<sup>*</sup>, Wenying Chen, Jike Qi, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2024). Breastfeeding, genetic susceptibility, and the risk of asthma and allergic diseases in children and adolescents: a retrospective national population-based cohort study. <em>BMC Public Health</em>, 24(1): 3056. <a class="pub-link" href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-20501-0" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Tongyu Gao, Keying Chen, Yuxin Liu, Ying Liu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). More attention should be paid on time-varying environmental exposures in the UK Biobank. <em>European Journal of Preventive Cardiology</em>, 31(11): e85. <a class="pub-link" href="https://academic.oup.com/eurjpc/article-abstract/31/11/e85/7670371?utm_source=etoc&amp;utm_campaign=eurjpc&amp;utm_medium=email#" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang<sup>*</sup>, Tongyu Gao<sup>*</sup>, Xingjie Hao<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2024). Mendelian randomization is good but not almighty. <em>Science of the Total Environment</em>, 950, 175432. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0048969724055827?via%3Dihub" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup>, Hao Zhang, Yuxin Liu, Jike Qi,  Yu Yan, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). Association of cigarette smoking, smoking cessation with the risk of cardiometabolic multimorbidity in the UK Biobank. <em>BMC Public Health</em>, 24(1): 1910. <a class="pub-link" href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-19457-y" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Tongyu Gao, Keying Chen, Yuxin Liu, Ying Liu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). Co-exposure to multiple air pollutants, genetic susceptibility, and risk of acute myocardial infarction onset: A cohort analysis of the UK Biobank participants. <em>European Journal of Preventive Cardiology</em>, 31(6): 698-706. <a class="pub-link" href="https://academic.oup.com/eurjpc/article-abstract/31/6/698/7470718?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2024). Incorporating genetic similarity of auxiliary samples into eGene identification under the transfer learning framework. <em>Journal of Translational Medicine</em>, 22(1): 258. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-024-05053-6" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Shuo Zhang<sup>*</sup>, Hongyan Cao<sup>*</sup>, Keying Chen, Tongyu Gao, Huashuo Zhao, Chu Zheng, Ting Wang, <strong>Ping Zeng</strong><sup>#</sup> and Ke Wang<sup>#</sup> (2024). Joint exposure to various ambient air pollutants, genetic susceptibility and incident dementia: a prospective analysis in the UK Biobank cohort. <em>International Journal of Public Health</em>, 69: 1606868. <a class="pub-link" href="https://www.ssph-journal.org/articles/10.3389/ijph.2024.1606868/full?&amp;utm_source=Email_to_authors_&amp;utm_medium=Email&amp;utm_content=T1_11.5e1_author&amp;utm_campaign=Email_publication&amp;field=&amp;journalName=International_Journal_of_Public_Health&amp;id=1606868" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yiyang Zhu, Hao Zhang, Jike Qi, Yuxin Liu, Yu Yan, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). Evaluating causal association of maternal educational attainment on offspring birthweight via observational study and Mendelian randomization analyses. <em>SSM - Population Health</em>, 25: 101587. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2352827323002525" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Meng Zhang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, <strong>Ping Zeng</strong><sup>#</sup> and Zhuangzhuang Liu<sup>#</sup> (2024). Investigating the relationship between birthweight and breast cancer from a non-linear and mediation perspective. <em>Iranian Journal of Public Health</em>, 53(1): 187-197. <a class="pub-link" href="https://publish.kne-publishing.com/index.php/ijph/article/view/14695" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jing Dai, Keying Chen, Yiyang Zhu, Lei Xia, Ting Wang, Zhongshang Yuan and <strong>Ping Zeng</strong><sup>#</sup> (2024). Identifying risk loci for obsessive-compulsive disorder and shared genetic component with schizophrenia: a large-scale multi-trait association analysis with summary statistics. <em>Progress in Neuro-Psychopharmacology and Biological Psychiatry</em>, 129: 110906. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0278584623001926?dgcid=author" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Keying Chen, Tongyu Gao, Ying Liu, Kexuan Zhu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2024). Identifying risk loci for FTD and shared genetic component with ALS: a large-scale multi-trait association analysis. <em>Neurobiology of Aging</em>, 134: 28-39. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0197458023002361" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2023</h2>
+        <ol class="publication-list">
+          <li>Peilin Yu, Zhou Jiang, Chu Zheng, <strong>Ping Zeng</strong>, Lihong Huang<sup>#</sup>, Yingliang Jin<sup>#</sup> and Ke Wang<sup>#</sup> (2023). Variety ACEs and risk of developing anxiety, depression, or anxiety-depression co-morbidity: the 2006-2022 UK Biobank data. <em>Frontiers in Psychiatry</em>, 14: 1233981. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1233981/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Influence of social deprivation on morbidity and all-cause mortality of cardiometabolic multi-morbidity: a cohort analysis of the UK Biobank. <em>BMC Public Health</em>, 23(1): 2177. <a class="pub-link" href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-17008-5#citeas" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yuxuan Wu<sup>*</sup>, Xingjie Hao<sup>*</sup>, Kexuan Zhu, Chu Zheng, Fengjun Guan, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Long-term adverse influence of smoking during pregnancy on height and body size of offspring at ten years old in the UK Biobank cohort. <em>SSM - Population Health</em>, 24: 101506. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2352827323001714" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Siyi Jin<sup>*</sup>, Ting Wang<sup>*</sup>, Wenying Chen, Yuxuan Wu, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2023). Maternal and fetal origins of offspring blood pressure: statistical analysis using genetic correlation and genetic risk score based Mendelian randomization. <em>International Journal of Epidemiology</em>, 52(5): 1360-1376. <a class="pub-link" href="https://academic.oup.com/ije/advance-article-abstract/doi/10.1093/ije/dyad034/7082923?redirectedFrom=fulltext&amp;login=false" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhou Jiang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Keying Chen, Yuxuan Wu, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Long-term influence of air pollutants on morbidity and all-cause mortality of cardiometabolic multi-morbidity: A cohort analysis of the UK Biobank participants. <em>Environmental Research</em>, 237(Part 1): 116873. <a class="pub-link" href="https://linkinghub.elsevier.com/retrieve/pii/S0013935123016778" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haojie Lu<sup>*</sup>, Shuo Zhang<sup>*</sup>, Zhou Jiang<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2023). Leveraging trans-ethnic genetic risk scores to improve association power for complex traits in underrepresented populations. <em>Briefings in Bioinformatics</em>, 24(4): bbad232. <a class="pub-link" href="https://academic.oup.com/bib/article-abstract/24/4/bbad232/7199900?redirectedFrom=fulltext&amp;login=false" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jinhui Zhang<sup>*</sup>, Shuo Zhang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Ting Wang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2023). Similarity and diversity of genetic architecture for complex traits between East Asian and European populations.  <em>BMC Genomics</em>, 24(1): 314. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-023-09434-x" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jiahao Qiao<sup>*</sup>, Yuxuan Wu<sup>*</sup>, Shuo Zhang<sup>*</sup>, Yue Xu, Jinhui Zhang, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>#</sup> (2023). Evaluating significance of European-associated index SNPs in the East Asian population for 31 complex phenotypes. <em>BMC Genomics</em>, 24(1): 324. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-023-09425-y" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haibo Xu<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Shuo Zhang<sup>*</sup>, Xin Liu and <strong>Ping Zeng</strong><sup>#</sup> (2023). How can childhood maltreatment affect post-traumatic stress disorder in adult: results from a composite null hypothesis perspective of mediation analysis. <em>Frontiers in Psychiatry</em>, 14: 1102811. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1102811/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jiahao Qiao<sup>*</sup>，Ting Wang<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Yiyang Zhu, Meng Zhang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2023). Genetic correlation and gene-based pleiotropy analysis for four neurodegenerative diseases with summary statistics from genome-wide association studies. <em>Neurobiology of Aging</em>, 124: 117-128. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0197458022002755?CMX_ID=&amp;SIS_ID=&amp;dgcid=STMJ_AUTH_SERV_PUBLISHED&amp;utm_acid=103379320&amp;utm_campaign=STMJ_AUTH_SERV_PUBLISHED&amp;utm_in=DM331526&amp;utm_medium=email&amp;utm_source=AC_" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jing Dai, Yue Xu, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2023). Exploring the relationship between socioeconomic deprivation index and Alzheimer's disease using summary-level data: from genetic correlation to causality. <em>Progress in Neuro-Psychopharmacology and Biological Psychiatry</em>, 123: 110700. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0278584622001920?dgcid=author" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2022</h2>
+        <ol class="publication-list">
+          <li>Wenyan Hou<sup>*</sup>, Fengjun Guan<sup>*</sup>, Lei Xia, Yue Xu, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2022). Investigating the influence of breastfeeding on asthma in children under 12 years old in the UK Biobank. <em>Frontiers in Immunology</em>, 13: 967101. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fimmu.2022.967101/full?utm_source=F-NTF&amp;utm_medium=EMLX&amp;utm_campaign=PRD_FEOPS_20170000_ARTICLE" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jiahao Qiao<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Yuxuan Wu, <strong>Ping Zeng</strong><sup>#</sup> and Ting Wang<sup>*</sup> (2022). Detecting associated genes for complex traits shared across East Asian and European populations  under the framework of composite null hypothesis testing. <em>Journal of Translational Medicine</em>, 20(1): 424. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-022-03637-8" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhonghe Shao<sup>*</sup>, Ting Wang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Yuchen Zhang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2022). A comprehensive comparison of multilocus association methods with summary statistics in genome-wide association studies. <em>BMC Bioinformatics</em>, 23(1): 359. <a class="pub-link" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-022-04897-3" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Meng Zhang <sup>*</sup>, Jiahao Qiao<sup>*</sup>, Shuo Zhang<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2022). Exploring the association between birthweight and breast cancer using summary statistics from a perspective of genetic correlation, mediation, and causality. <em>Journal of Translational Medicine</em>, 20: 227. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-022-03435-2" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haibo Xu<sup>#</sup>, Xing Liu and <strong>Ping Zeng</strong> (2022). The Mediating Role of Social Support in the Relationship between Psychological Capital and Depression among Chinese Emergency Physicians. <em>Psychology Research and Behavior Management</em>, 15: 977-990. <a class="pub-link" href="https://www.dovepress.com/the-mediating-role-of-social-support-in-the-relationship-between-psych-peer-reviewed-fulltext-article-PRBM" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Ting Wang<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Shuo Zhang<sup>*</sup>, Yongyue Wei<sup>*</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2022). Simultaneous test and estimation of total genetic effect in eQTL integrative analysis through mixed models. <em>Briefings in Bioinformatics</em>, 23(2): bbac038. <a class="pub-link" href="https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac038/6535679?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Ting Wang, Haojie Lu and <strong>Ping Zeng</strong><sup>#</sup> (2022). Identifying pleiotropic genes for complex phenotypes with summary statistics from a perspective of composite null hypothesis testing. <em>Briefings in Bioinformatics</em>, 23(1): bbab389. <a class="pub-link" href="https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbab389/6375058?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>王婷, 蒋舟, <strong>曾平</strong><sup>#</sup> (2022). 基于两样本孟德尔随机化方法分析血液代谢物与慢性肾病的因果关系. <em>江苏预防医学</em>. 33(2): 124-128.</li>
+          <li>邢智轩, 周洋洋, 张家坤, 尹钰恒, <strong>曾平</strong><sup>#</sup> (2022). 双样本孟德尔随机化法探究出生体重与乳腺癌的关系. <em>江苏预防医学</em>. 33(2): 119-123+157.</li>
+          <li>陆皓杰, <strong>曾平</strong><sup>#</sup>, 黄水平<sup>#</sup> (2022). 基因表达对膀胱癌生存结局的预测：稀疏与混合Cox模型的实证比较研究. <em>中国卫生统计</em>, 39(1): 25-30.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2021</h2>
+        <ol class="publication-list">
+          <li>Haimiao Chen<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Ting Wang<sup>*</sup>, Zhonghe Shao, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Assessing causal relationship between human blood metabolites and five neurodegenerative diseases with GWAS summary statistics. <em>Frontiers in Neuroscience</em>, 15: 680104. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fnins.2021.680104/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haojie Lu<sup>*</sup>, Jiahao Qiao<sup>*</sup>, Zhonghe Shao<sup>*</sup>, Ting Wang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). A comprehensive gene-centric pleiotropic association analysis for 14 psychiatric disorders with GWAS summary statistics. <em>BMC Medicine</em>, 19: 314. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-021-02186-z#citeas" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jiahao Qiao, Meng Zhang, Ting Wang, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Evaluating Causal Relationship Between Metabolites and Six Cardiovascular Diseases Based on GWAS Summary Statistics. <em>Frontiers in Genetics</em>, 12: 746677. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2021.746677/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haojie Lu<sup>*</sup>, Yongyue Wei<sup>*</sup>, Zhou Jiang, Jinhui Zhang, Ting Wang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Integrative eQTL-weighted hierarchical Cox models for SNP-set based time-to-event association studies. <em>Journal of Translational Medicine</em>, 19(1): 418. <a class="pub-link" href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-021-03090-z" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Derui Yan, Mingjing Shen, Zixuan Du, Jianping Cao, Ye Tian, <strong>Ping Zeng</strong><sup>#</sup> and Zaixiang Tang<sup>#</sup> (2021). Developing ZNF Gene Signatures Predicting Radiosensitivity of Patients with Breast Cancer. <em>Journal of Oncology</em>, 9255494. <a class="pub-link" href="https://www.hindawi.com/journals/jo/2021/9255494/" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhonghe Shao<sup>*</sup>, Ting Wang<sup>*</sup>, Meng Zhang, Zhou Jiang, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). IUSMMT: survival mediation analysis of gene expression with multiple DNA methylation exposures and its application to cancers of TCGA. <em>PLoS Computational Biology</em>, 17(8): e1009250. <a class="pub-link" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009250" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haimiao Chen<sup>*</sup>, Jinhui Zhang<sup>*</sup>, Ting Wang<sup>*</sup>, Shuo Zhang, Qingwei Lai, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Type II diabetes mellitus and amyotrophic lateral sclerosis: genetic overlap, causality, and mediation. <em>Journal of Clinical Endocrinology &amp; Metabolism</em>, 106(11): e4497-e4508. <a class="pub-link" href="https://academic.oup.com/jcem/advance-article-abstract/doi/10.1210/clinem/dgab465/6309609?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haojie Lu<sup>*</sup>, Ting Wang<sup>*</sup>, Jinhui Zhang, Shuo Zhang, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Evaluating marginal genetic correlation of associated loci for complex diseases and traits between European and East Asian populations. <em>Human Genetics</em>, 140(9): 1285-1297. <a class="pub-link" href="https://link.springer.com/article/10.1007%2Fs00439-021-02299-8" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lihong Huang<sup>*</sup>, Xinghao Yu<sup>*</sup>, Zhou Jiang and <strong>Ping Zeng</strong><sup>#</sup> (2021). Novel autophagy-related gene signature investigation for patients with oral squamous cell carcinoma. <em>Frontiers in Genetics</em>, 12: 673319. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2021.673319/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Zhonghe Shao and Xiang Zhou<sup>#</sup> (2021). Statistical methods for mediation analysis in the era of high-throughput genomics: current successes and future challenges. <em>Computational and Structural Biotechnology Journal</em>, 19: 3209-3224. <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2001037021002233?via%3Dihub" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu, Yongyue Wei, <strong>Ping Zeng</strong><sup>#</sup> and Shufeng Lei<sup>#</sup> (2021). Birth weight is positively associated with adult osteoporosis risk: observational and Mendelian randomization studies. <em>Journal of Bone and Mineral Research</em>, 36(8): 1469-1480. <a class="pub-link" href="https://asbmr.onlinelibrary.wiley.com/doi/10.1002/jbmr.4316" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Jinhui Zhang<sup>*</sup>, Haojie Lu<sup>*</sup>, Shuo Zhang, Huashuo Zhao, Ting Wang, Fengjun Guan<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Leveraging methylation alterations to discover potential causal genes associated with the survival risk of cervical cancer in TCGA through a two-stage inference approach. <em>Frontiers in Genetics</em>, 12: 667877. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2021.667877/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yixin Gao<sup>*</sup>, Jinhui Zhang<sup>*</sup>, Huashuo Zhao, Fengjun Guan<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Instrumental heterogeneity in sex-specific two-sample Mendelian randomization: causal effects of anthropometric traits on breast/prostate cancer. <em>Frontiers in Genetics</em>, 12: 651332. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2021.651332/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haojie Lu<sup>*</sup>, Jinhui Zhang<sup>*</sup>, Zhou Jiang, Meng Zhang, Ting Wang, Huashuo Zhao and <strong>Ping Zeng</strong><sup>#</sup> (2021). Detection of genetic overlap between rheumatoid arthritis and systemic lupus erythematosus using GWAS summary statistics. <em>Frontiers in Genetics</em>, 12: 656545. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2021.656545/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Jing Dai, Siyi Jin and Xiang Zhou<sup>#</sup> (2021). Aggregating multiple expression prediction models improves the power of transcriptome wide association studies. <em>Human Molecular Genetics</em>, 30(10): 939-951. <a class="pub-link" href="https://academic.oup.com/hmg/article-abstract/30/10/939/6145951?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yanjun Wang, Ping Guo, Lu Liu, Yanan Zhang, <strong>Ping Zeng</strong><sup>#</sup> and Zhongshang Yuan<sup>#</sup> (2021). Mendelian randomization highlights the causal role of normal thyroid function on blood lipid profiles. <em>Endocrinology</em>, 162(5): bqab037. <a class="pub-link" href="https://doi.org/10.1210/endocr/bqab037" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu<sup>*</sup>, Ting Wang<sup>*</sup>, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). Evaluation of the causal effects of blood lipid levels on gout with summary level GWAS data: two-sample Mendelian randomization and mediation analysis. <em>Journal of Human Genetics</em>，66(5): 465-473. <a class="pub-link" href="https://www.nature.com/articles/s10038-020-00863-0#citeas" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lu Liu, <strong>Ping Zeng</strong>, Fuzhong Xue, Zhongshang Yuan<sup>#</sup> and Xiang Zhou<sup>#</sup> (2021). Multi-trait transcriptome-wide association studies with probabilistic Mendelian randomization. <em>The American Journal of Human Genetics</em>, 108(2): 240-256. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0002929720304420" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haimiao Chen<sup>*</sup>, Ting Wang<sup>*</sup>, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2021). New novel non-MHC genes were identified for cervical cancer with an integrative approach of transcriptome-wide association analysis. <em>Journal of Cancer</em>, 12(3): 840-848. <a class="pub-link" href="https://www.jcancer.org/v12p0840.htm" target="_blank" rel="noopener">Article</a>.</li>
+          <li>高一欣, <strong>曾平</strong><sup>#</sup>, 赵华硕<sup>#</sup> (2021). 两样本孟德尔随机化中工具变量对因果估计的性别特异性影响：人体测量学性状与乳腺癌关系的实证研究. <em>中国卫生统计</em>, 38(2): 198-203.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2020</h2>
+        <ol class="publication-list">
+          <li>Haimiao Chen<sup>*</sup>, Ting Wang<sup>*</sup>, Jinna Yang, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Improved detection of potentially pleiotropic genes in coronary artery disease and chronic kidney disease using GWAS summary statistics. <em>Frontiers in Genetics</em>, 11: 592461. <a class="pub-link" href="https://doi.org/10.3389/fgene.2020.592461" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lishun Xiao<sup>*</sup>, Zhongshang Yuan<sup>*</sup>, Siyi Jin, Ting Wang and <strong>Ping Zeng</strong><sup>#</sup> (2020). Multiple-Tissue Integrative Transcriptome-Wide Association Studies Discovered New Genes Associated With Amyotrophic Lateral Sclerosis. <em>Frontiers in Genetics</em>, 11:587243. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2020.587243/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yixin Gao<sup>*</sup>, Yongyue Wei<sup>*</sup>, Shuiping Huang, Xiang Zhou, Huashuo Zhao and <strong>Ping Zeng</strong><sup>#</sup> (2020). Assessing the relationship between leukocyte telomere length and cancer risk/mortality in UK Biobank and TCGA data sets with the genetic risk score and Mendelian randomization approaches. <em>Frontiers in Genetics</em>, 11(1270): 583106. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2020.583106/full?&amp;utm_source=Email_to_authors_&amp;utm_medium=Email&amp;utm_content=T1_11.5e1_author&amp;utm_campaign=Email_publication&amp;field=&amp;journalName=Frontiers_in_Genetics&amp;id=583106" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu, Ting Wang, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). How can gene expression information improve prognostic prediction in TCGA cancers: an empirical comparison study on regularization and mixed-effect survival models. <em>Frontiers in Genetics</em>, 11: 920. <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2020.00920/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Yixin Gao<sup>*</sup>, Ting Wang<sup>*</sup>, Xinghao Yu, International FTD-Genomics Consortium (IFGC), Huashuo Zhao<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Mendelian randomization implies no direct causal association between leukocyte telomere length and amyotrophic lateral sclerosis. <em>Scientific Reports</em>, 10(1): 12184. <a class="pub-link" href="https://www.nature.com/articles/s41598-020-68848-9" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Zhongshang Yuan, Huanhuan Zhu, <strong>Ping Zeng</strong>, Sheng Yang, Shiquan Sun, Can Yang, Jin Liu and Xiang Zhou<sup>#</sup> (2020). Testing and controlling for horizontal pleiotropy with the probabilistic Mendelian randomization in transcriptome-wide association studies. <em>Nature Communications</em>, 11(1): 3861. <a class="pub-link" href="https://www.nature.com/articles/s41467-020-17668-6" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu<sup>*</sup>, Zhongshang Yuan<sup>*</sup>, Haojie Lu, Yixin Gao, Haimiao Chen, Zhonghe Shao, Jiaji Yang, Fengjun Guan, Shuiping Huang and <strong>Ping Zeng</strong><sup>#</sup> (2020). Relationship between birth weight and chronic kidney disease: evidence from systematics review and two-sample Mendelian randomization analysis. <em>Human Molecular Genetics</em>, 29(13): 2261-2274. <a class="pub-link" href="https://academic.oup.com/hmg/article-abstract/29/13/2261/5824309?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu<sup>*</sup>, Ting Wang<sup>*</sup>, Yiming Chen, Ziyuan Shen, Yixin Gao, Lishun Xiao, Junnian Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Alcohol Drinking and Amyotrophic Lateral Sclerosis: An Instrumental Variable Causal Inference. <em>Annals of Neurology</em>, 88(1): 195-198. <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/full/10.1002/ana.25721" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lu Liu<sup>*</sup>, <strong>Ping Zeng</strong><sup>*</sup>, Sheng Yang<sup>#</sup> and Zhongshang Yuan<sup>#</sup> (2020). Leveraging methylation to identify the potential causal genes on survival in lung adenocarcinoma and lung squamous cell carcinoma. <em>Oncology Letters</em>, 20(1): 193-200. <a class="pub-link" href="https://www.spandidos-publications.com/10.3892/ol.2020.11564/abstract" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Ting Wang<sup>*</sup>, Zaixiang Tang<sup>*</sup>, Xinghao Yu<sup>*</sup>, Yixin Gao, Chengzong Li, Fengjun Guan, Shuiping Huang<sup>#</sup>, Junnian Zheng<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Birth weight and stroke in adult life: genetic correlation and causal inference with large scale genome-wide association genetic data sets. <em>Frontiers in Neuroscience</em>, 14(479). <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fnins.2020.00479/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Haimiao Chen, Zhonghe Shao, Yixin Gao, Xinghao Yu, Shuiping Huang<sup>#</sup> and <strong>Ping Zeng</strong><sup>#</sup> (2020). Are blood lipids risk factors for osteoporotic fracture? Integrative evidence from instrumental variable causal inference and mediation analysis using genetic data. <em>Bone</em>, 131: 115174. <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S8756328219304685" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2019</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Ting Wang, Junnian Zheng<sup>#</sup> and Xiang Zhou<sup>#</sup> (2019). Causal association of type 2 diabetes with amyotrophic lateral sclerosis: new evidence from Mendelian randomization using GWAS summary statistics. <em>BMC Medicine</em>, 17(1), 225. <a class="pub-link" href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1448-9" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup> and Xiang Zhou<sup>#</sup> (2019). Causal Association Between Birth Weight and Adult Diseases: Evidence From a Mendelian Randomization Analysis. <em>Frontiers in Genetics</em>,10(618). <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fgene.2019.00618/abstract" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Xinghao Yu and Haibo Xu<sup>#</sup> (2019). Association Between Premorbid Body Mass Index and Amyotrophic Lateral Sclerosis: Causal Inference Through Genetic Approaches. <em>Frontiers in Neurology</em>, 10(543). <a class="pub-link" href="https://www.frontiersin.org/articles/10.3389/fneur.2019.00543/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Xinghao Yu and Xiang Zhou<sup>#</sup> (2019). Birth weight is not causally associated with adult asthma: results from instrumental variable analyses. <em>Scientific Reports</em>, 9(1): 7647. <a class="pub-link" href="https://www.nature.com/articles/s41598-019-44114-5" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xinghao Yu, Lishun Xiao, <strong>Ping Zeng</strong><sup>#</sup> and Shuiping Huang<sup>#</sup> (2019). Jackknife Model Averaging Prediction Methods for Complex Phenotypes with Gene Expression Levels by Integrating External Pathway Information. <em>Computational and Mathematical Methods in Medicine</em>, 2019: 8. <a class="pub-link" href="https://www.hindawi.com/journals/cmmm/2019/2807470/cta/" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup> and Xiang Zhou<sup>#</sup> (2019). Causal effects of blood lipids on amyotrophic lateral sclerosis: a Mendelian randomization study. <em>Human Molecular Genetics</em>, 28(4): 688-697. <a class="pub-link" href="https://www.ncbi.nlm.nih.gov/pubmed/30445611" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2018</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong>, Xingjie Hao and Xiang Zhou<sup>#</sup> (2018). Pleiotropic Mapping and Annotation Selection in Genome-wide Association Studies with Penalized Gaussian Mixture Models. <em>Bioinformatics</em>, 34(16): 2797-2807. <a class="pub-link" href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty204/4960046?redirectedFrom=fulltext" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Xingjie Hao, <strong>Ping Zeng</strong>, Shujun Zhang and Xiang Zhou<sup>#</sup> (2018). Identifying and exploiting trait-relevant tissues with multiple functional annotations in genome-wide association studies. <em>PLoS Genetics</em>, 14(1): e1007186. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007186" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2017</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Ting Wang and Shuiping Huang<sup>#</sup> (2017). Cis-SNPs Set Testing and PrediXcan Analysis for Gene Expression Data using Linear Mixed Models. <em>Scientific Reports</em>, 7(1): 15237. <a class="pub-link" href="https://www.nature.com/articles/s41598-017-15055-8" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong> and Xiang Zhou<sup>#</sup> (2017). Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models. <em>Nature Communications</em>, 8(1): 456. <a class="pub-link" href="https://www.nature.com/articles/s41467-017-00470-2?WT.feed_name=subjects_genetics" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup>, Xiang Zhou and Shuiping Huang<sup>#</sup> (2017). Prediction of gene expression with cis-SNPs using mixed models and regularization methods. <em>BMC Genomics</em>, 18(1): 368. <a class="pub-link" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-3759-6" target="_blank" rel="noopener">Article</a>.</li>
+          <li>Lorin Crawford<sup>#</sup>, <strong>Ping Zeng</strong>, Sayan Mukherjee and Xiang Zhou<sup>#</sup> (2017). Detecting epistasis with the marginal epistasis test in genetic mapping studies of quantitative traits. <em>PLoS Genetics</em>, 13(7): e1006869. <a class="pub-link" href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006869" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2015</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong>, Yang Zhao, Chen Qian, Liwei Zhang, Ruyang Zhang, Jianwei Gou, Jin Liu, Liya Liu and Feng Chen<sup>#</sup> (2015). Statistical analysis for Genome-Wide Association Study. <em>Journal of Biomedical Research</em>, 29(4): 285-297. <a class="pub-link" href="http://www.jbr-pub.org/ch/reader/view_abstract.aspx?file_no=JBR150403&amp;flag=1" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong><sup>#</sup> and Ting Wang (2015). Bootstrap restricted likelihood ratio test for the detection of rare variants. <em>Current Genomics</em>, 16(3): 194-202. <a class="pub-link" href="http://www.eurekaselect.com/129127" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong>, Yang Zhao, Hongliang Li, Ting Wang and Feng Chen<sup>#</sup> (2015). Permutation-based variance component test in generalized linear mixed model with application to multilocus genetic association study. <em>BMC Medical Research Methodology</em>, 15(37). <a class="pub-link" href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-015-0030-1" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
+      <div class="pub-year-block">
+        <h2 class="pub-year">2014</h2>
+        <ol class="publication-list">
+          <li><strong>Ping Zeng</strong>, Yang Zhao, Jin Liu, Liya Liu, Liwei Zhang, Ting Wang, Shuiping Huang and Feng Chen<sup>#</sup> (2014). Likelihood ratio tests in rare variant detection for continuous phenotypes. <em>Annals of Human Genetics</em>, 78(5): 320-332. <a class="pub-link" href="http://onlinelibrary.wiley.com/doi/10.1111/ahg.12071/full" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong>, Yang Zhao, Liwei Zhang, Shuiping Huang and Feng Chen<sup>#</sup> (2014). Rare Variants Detection with Kernel Machine Learning Based on Likelihood Ratio Test. <em>PLoS ONE</em>, 9(3): e93355. <a class="pub-link" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0093355" target="_blank" rel="noopener">Article</a>.</li>
+          <li><strong>Ping Zeng</strong>, Yongyue Wei, Yang Zhao, Jin Liu, Liya Liu, Ruyang Zhang, Jianwei Gou, Shuiping Huang and Feng Chen<sup>#</sup> (2014). Variable selection approach for zero-inflated count data via adaptive lasso. <em>Journal of Applied Statistics</em>, 41(4): 879-894. <a class="pub-link" href="http://www.tandfonline.com/doi/abs/10.1080/02664763.2013.858672" target="_blank" rel="noopener">Article</a>.</li>
+        </ol>
+      </div>
     </section>
   </main>
 
@@ -174,5 +374,23 @@
       <a class="back-to-top" href="#top">Top</a>
     </span>
   </footer>
+
+  <script>
+    document.querySelectorAll('.publication-tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.dataset.target;
+        document.querySelectorAll('.publication-tab').forEach((item) => {
+          const active = item === tab;
+          item.classList.toggle('active', active);
+          item.setAttribute('aria-selected', String(active));
+        });
+        document.querySelectorAll('.publication-panel').forEach((panel) => {
+          const active = panel.id === targetId;
+          panel.hidden = !active;
+          panel.setAttribute('aria-hidden', String(!active));
+        });
+      });
+    });
+  </script>
 </body>
 </html>
